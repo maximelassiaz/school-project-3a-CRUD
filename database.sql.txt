@@ -1,0 +1,21 @@
+CREATE DATABASE IF NOT EXISTS Ecommerce;
+
+DROP TABLE IF EXISTS produit;
+CREATE TABLE produit (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    nom_produit VARCHAR(255) NOT NULL,
+    genre_produit VARCHAR(255) NOT NULL,
+    console_produit VARCHAR(255) NOT NULL,
+    description_produit TEXT NOT NULL,
+    prix_produit DECIMAL(10,2) NOT NULL,
+    image_produit VARCHAR(255) NOT NULL,
+    PRIMARY KEY (id)
+    );
+
+INSERT INTO produit (nom_produit, genre_produit, console_produit, description_produit, image_produit, prix_produit)
+VALUES 
+("Diablo 2", "Hack and slash", "PC", "Diablo II is an action role-playing hack-and-slash computer video game developed by Blizzard North and published by Blizzard Entertainment in 2000 for Microsoft Windows, Classic Mac OS, and macOS. The game, with its dark fantasy and horror themes, was conceptualized and designed by David Brevik and Erich Schaefer, who, with Max Schaefer, acted as project leads on the game. The producers were Matthew Householder and Bill Roper.", "https://picsum.photos/200", 9.99),
+("Diablo 3", "Hack and slash", "PC", "Diablo III is a hack-and-slash action role-playing game developed and published by Blizzard Entertainment as the third installment in the Diablo franchise. It was released for Microsoft Windows and OS X in May 2012, the PlayStation 3 and Xbox 360 in September 2013, the PlayStation 4 and Xbox One in August 2014, and the Nintendo Switch in November 2018. Players choose to play as one of seven character classes – Barbarian, Crusader, Demon Hunter, Monk, Necromancer, Witch Doctor, or Wizard – and are tasked with defeating the Lord of Terror, Diablo, as in previous games in the series.", "https://picsum.photos/200", 19.99),
+("Warcraft 3 : Reforged", "Real-time stategy", "PC", "WarCraft III: Reforged is a remastered edition of the 2002 real-time strategy video game WarCraft III: Reign of Chaos and its expansion The Frozen Throne. Released on January 28, 2020, it adds revamped graphics (including 16:9 widescreen support), new campaign gameplay settings as well as modern online Battle.net features. The game received mixed reviews from critics and an overwhelmingly negative reception from players for its changes from the original, the lack of many features, and technical issues.", "https://picsum.photos/200", 29.99),
+("Overwatch: Legendary Edition", "First-person shooter", "PS4", "Overwatch is a team-based multiplayer first-person shooter developed and published by Blizzard Entertainment. Described as a hero shooter, Overwatch assigns players into two teams of six, with each player selecting from a large roster of characters, known as heroes, with unique abilities. Teams work to complete map-specific objectives within a limited period of time. Blizzard has added new characters, maps, and game modes post-release, all free of charge, with the only additional cost to players being optional loot boxes to purchase cosmetic items. It was released for PlayStation 4, Xbox One, and Windows in May 2016, and Nintendo Switch in October 2019.", "https://picsum.photos/200", 59.99),
+("World of Warcraft®: Shadowlands - Basic Edition", "PC", "MMORPG", "World of Warcraft: Shadowlands is the eighth expansion pack for the massively multiplayer online role-playing game (MMORPG) World of Warcraft, following Battle for Azeroth. It was announced and made available for preorder at BlizzCon on November 1, 2019. Originally scheduled for release on October 27, 2020; its release was delayed until November 23, the sixteenth anniversary of the release of the original game.", "https://picsum.photos/200", 39.99);
