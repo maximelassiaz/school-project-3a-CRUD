@@ -1,21 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des produits</title>
-</head>
+<?php 
+    $title = "Gestion de vos produits";
+    require "header.php";
+?>
 <body>
     <?php 
     require "function.php";
+    require "navbar.php";
     ?>
 
-    <h1>Tableau de bords</h1>
-    <button><a href="index.php">Retour accueil</a></button>
+    <h1>Tableau de bord</h1>
 
-    <h2>Liste des produits</h2>
-
-    <button><a href="addProduct.php">Ajouter un produit</a></button>
+    <button class="addProduct"><a href="addProduct.php">Ajouter un produit</a></button>
 
     <table>
         <thead>

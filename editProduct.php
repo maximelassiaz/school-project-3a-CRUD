@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Éditer un produit</title>
-</head>
+<?php 
+    $title = "Modifier un produit";
+    require "header.php";
+?>
 <body>
-    <h1>Éditer un jeu vidéo</h1>
     <?php
         require "function.php";
+        require "navbar.php";
+    ?>
+    <h1>Éditer un jeu vidéo</h1>
+    <button><a href="listProduct.php">Retour liste des produits</a></button>
+    <?php
         showEditProduct();
     ?>
 </body>

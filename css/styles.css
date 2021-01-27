@@ -1,0 +1,172 @@
+:root {
+    --primary: rgb(50, 50, 165);
+    --secondary: rgb(85, 83, 83);
+    --text: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+table {
+    background-color: white;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid black;
+    color: black;
+    width: 80%;
+    margin: 50px auto;
+}
+
+th, td {
+    text-align: center;
+    padding: 16px;
+}
+
+thead > tr, tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+button {
+    background-color: var(--secondary);
+    padding: 12px 24px;
+    border: none;
+    border-radius : 10px;
+}
+
+button:hover {
+    background-color: rgb(24, 20, 20);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+.delete {
+    background-color: rgb(206, 62, 62);
+}
+
+.delete:hover {
+    background-color: rgb(134, 34, 34);
+}
+
+/* NAVBAR */
+
+.navbar {
+    background-color: rgb(39, 31, 31);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    list-style: none;
+    
+}
+
+.navbar li a {
+    text-decoration: none;
+    padding: 16px;  
+    display: block;  
+}
+
+.navbar li a:hover {
+    background-color: rgb(60, 60, 70);
+}
+
+/* LANDING PAGE */
+
+.landing-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.landing-page button {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+/* LIST PRODUCTS */
+
+.addProduct {
+    background-color: rgb(70, 209, 70);
+}
+
+.addProduct:hover {
+    background-color: rgb(43, 122, 43);
+}
+
+/* DETAILS PRODUCT */
+
+.product-card {
+    background-color: rgba(255, 255, 255, 0.897);
+    border-radius: 10px;
+    color: black;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.product-card p{
+    margin: 10px;
+}
+
+.product-card button {
+    margin: 20px;
+}
+
+.product-card .category {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* EDIT PRODUCT */
+
+.editForm, .addForm {
+    background-color: #ccc;
+    color: black;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.editForm label, .addForm label {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.editForm label, .editForm input, .editForm textarea, .editForm button, .editForm img, .addForm label, .addForm input, .addForm textarea, .addForm button, .addForm img {
+    margin: 10px;
+}
+
+/* DELETE PRODUCT */
+
+.delete-warning {
+    background-color: rgb(238, 74, 74);
+    border-radius: 10px;
+    padding: 10px;
+    width: 50%;
+    margin: 20px auto;
+}
